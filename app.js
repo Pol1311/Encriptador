@@ -108,7 +108,9 @@ function copiar() {
 function filtro( cadena ) {
 
     let texto = document.getElementById("textoCapturado").value;
-    let coincidencia = texto.search(/[^a-z|^0-9| ]/g);   
+  //  let coincidencia = texto.search(/[^a-z|^0-9| ]/g);   
+    let coincidencia = texto.search(/[^a-z| ]/g);   
+    
    // let mayuscula=false;
 
  /* 
