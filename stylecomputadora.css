@@ -57,6 +57,7 @@ body {
     padding: 15px;
     letter-spacing: 1px;
     margin-top: 15px;
+    resize: none;
 }
 
 ::placeholder { 
