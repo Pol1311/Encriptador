@@ -109,7 +109,8 @@ function filtro( cadena ) {
 
     let texto = document.getElementById("textoCapturado").value;
   //  let coincidencia = texto.search(/[^a-z|^0-9| ]/g);   
-    let coincidencia = texto.search(/[^a-z| ]/g);   
+    let coincidencia = texto.search(/[^a-z| ]/g);
+    let espacios = texto.search(/[a-z]/g);  
     
    // let mayuscula=false;
 
@@ -136,7 +137,9 @@ function filtro( cadena ) {
         //mayuscula=false;
     }
     else {
-        ventana(cadena);
+        if (espacios != -1) {
+            ventana(cadena);
+        }
     }
 
 
