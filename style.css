@@ -1,0 +1,92 @@
+body {
+    background-color:#4A3565;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fondoPostit {
+    background-color: rgba(0,0,0,0.9);
+    position:fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top:0;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    visibility: visible ; 
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+#postIt {
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.pista {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.4em;
+    line-height: 2em;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-65%);
+
+}
+
+#cerrarPost span{
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
+#cerrarPost span:hover {
+    cursor:pointer;
+    font-size: 3.2em;
+    text-shadow: 3px 3px rgb(129, 124, 124);
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( 250%, -320% );
+}
+
+header{
+    padding-top: 5px;
+}
+
+#fondoIndex {
+    display: none;                                                                             
+}
+
+.fondo {
+    display: block;
+    margin: 10px auto;
+}
+
+.imagenUrl{
+    color:#ae8fba;
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: right;
+    padding: 2px 20px 10px 15px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.imagenUrl a {
+    color:#6966DB;
+}
